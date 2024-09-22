@@ -1,0 +1,47 @@
+@media screen and (max-width: 1024px){
+    body{
+        background-color: #f0fbff;
+    }
+
+    header{
+        height: 10hv;
+    }
+
+    footer{
+        height: 6vh;
+    }
+
+    .grid-container{
+        height: auto;
+    }
+
+    .main{
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project1, .project2, .project3{
+        grid-template-columns: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .project1 ul, .project2 ul, .project3 ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li{
+        margin: 10px;
+    }
+
+    .png{
+        display: none;
+    }
+}
+
+    
+
+

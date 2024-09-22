@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles_contact.css">
+    <link rel="stylesheet" href="Styles_mobi_contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+    </style>
+    <title>Portfolio - Karol Olbryś</title>
+    <script src="Script.js"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="navigation">
+                <div class="home"><a href="Home.html">About me</a></div>
+                <div class="contact"><a href="Contact.html">Contact me</a></div>
+                <div class="project"><a href="Projects.html">My projects</a></div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="linkedin">
+                <img src="Linkedin_icon.png" alt="Linkedin logo">
+                <button class="linkedin_button" onclick="linkedinPage()">Mój Linkedin</button>
+            </div>
+            <div class="cv">
+                <img src="CV_icon.png" alt="CV logo">
+                <button class="cv_button" onclick="myCv()">Moje CV</button>
+            </div>
+            <div class="github">
+                <img src="Github_icon.png" alt="Github logo">
+                <button class="github_button" onclick="githubPage()">Mój Github</button>
+            </div>
+            <div class="email">
+                <form id="contactForm" name="contactForm" onsubmit="return noSpaceLeft()">
+                    Skontaktuj się ze mną!<br><br>
+                    Twój adres e-mail:<br>
+                    <input type="text" name="email"><br>
+                    Wiadomość:<br>
+                    <textarea rows="2" cols="20" name="comment" form="contactForm"></textarea><br>
+                    <input type="submit" value="Wyślij">
+                    <input type="reset" value="Reset">
+                    </form>
+            </div>
+        </div>  
+        <footer>
+            <p>Autor: Karol Olbryś - s27685</p>
+        </footer>
+    </div>
+</body>
+</html>

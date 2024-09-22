@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    margin-bottom: 6vh;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    height: 100vh;
+}
+
+header{
+    display: grid;
+    background-color:#2e94b9;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    height: 7vh;
+}
+
+footer{
+    height: 6vh;
+    background-color: #2e94b9;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    background-color:#f0fbff;
+    overflow-y: auto;
+}
+
+.navigation{
+    display: grid;
+    grid-column: -3/-2;
+    grid-row: 3/4;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.home a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f0fbff;
+}
+
+.home:hover{
+    background-color: #acdcee;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.contact a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f0fbff;
+}
+
+.contact a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f0fbff;
+}
+
+.contact:hover{
+    background-color: #acdcee;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.project:hover{
+    background-color: #acdcee;
+}
+
+.project a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #f0fbff;
+}
+
+.linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    flex-direction: column;
+}
+
+.linkedin_button, 
+.github_button, 
+.cv_button{
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 40%;
+    border: none;
+    color: white;
+    padding: 15px 45px;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    transition: 0.5s;
+    background-size: 200% auto;  
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 700;
+}
+
+.linkedin_button:hover, 
+.github_button:hover, 
+.cv_button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+.github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+    grid-row: 1/2; 
+    flex-direction: column;
+}
+
+.cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1/2; 
+    flex-direction: column; 
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3; 
+}
+
+.email form{
+    background-color: #acdcee;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+

@@ -1,0 +1,38 @@
+@media screen and (max-width: 1024px){
+    body{
+        background-color: #f0fbff;
+    }
+
+    header{
+        height: 10vh;
+    }
+
+    footer{
+        height: 6vh;
+    }
+
+    .grid-container{
+        height: auto;
+    }
+
+    .main{
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkedin, .cv, .github, .email{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .linkedin_button, .cv_button, .github_button{
+        margin-top: 10px;
+        padding: 10px 30px;
+    }
+}
+
+    
+
+
